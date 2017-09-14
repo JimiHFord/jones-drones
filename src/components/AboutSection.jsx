@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Spacer from './Spacer';
 
 export default class AboutSection extends Component {
@@ -26,6 +27,11 @@ export default class AboutSection extends Component {
                 Based in Rochester, Jones Drones provides commercial drone videography and photography throughout Western New York.
                 All of our pilots are certified with the FAA part 107 UAS licensure, and have extensive experience with both photography and drone operations.
               </p>
+              <div>
+                <Link className="btn btn-primary" to="meet-the-team">
+                  Meet the Team
+                </Link>
+              </div>
             </div>
             <Spacer />
           </div>
