@@ -1,7 +1,9 @@
 import React from 'react';
 
 export default () => (
-  <iframe width="600" height="400" allowFullScreen=""
+  <iframe
+    title="Sick Pano"
+    width="600" height="400" allowFullScreen=""
     style={{
       borderStyle: "none",
       maxWidth: "100%",

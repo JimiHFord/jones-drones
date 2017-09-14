@@ -1,0 +1,13 @@
+.foggy-background {
+  background: no-repeat center center fixed;
+  background-image: url('/foggy.jpg');
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  min-width:100%;
+  min-height:100%;
+  background-attachment:fixed;
+  position: absolute;
+}

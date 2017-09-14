@@ -4,9 +4,12 @@ import ReactGA from 'react-ga';
 import createHistory from "history/createBrowserHistory";
 import Shell from './Shell';
 import Home from './components/Home';
+import MeetTheTeam from './components/meet-the-team';
 // import './App.css';
 
-ReactGA.initialize('UA-99351059-1');
+if (process.env.NODE_ENV === 'production') {
+  ReactGA.initialize('UA-99351059-1');
+}
 
 const history = createHistory();
 const recordPageView = location => {
@@ -22,6 +25,7 @@ class App extends Component {
     const routeSwitcher = (
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/meet-the-team" component={MeetTheTeam} />
       </Switch>
     );
 
