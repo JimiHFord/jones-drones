@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "__": true
+  },
+  "rules": {
+    "no-empty": 2,
+    "no-implicit-coercion": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-multiple-empty-lines": 2,
+    "no-trailing-spaces": 2,
+    "new-cap": 2,
+    "semi": 1,
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "space-unary-ops": [
+      2, {
+        "nonwords": false,
+        "words": true
+    }],
+    "comma-spacing": 2,
+    "object-curly-spacing": ["error", "always"],
+    "space-before-blocks": ["error", {"functions": "always", "keywords": "always"}],
+    "brace-style": 1,
+    "react/jsx-uses-react": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/display-name": 0,
+    "block-scoped-var": 0,
+    "padded-blocks": 0,
+    "no-console": 0,
+    "id-length": 0,
+    "no-unused-expressions": 0,
+    "quotes": "single"
+  },
+  "plugins": [
+    "react"
+  ]
+}
