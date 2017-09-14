@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import Slideshow from './Slideshow';
+import AboutSection from './AboutSection';
+import SickPano from './SickPano';
+import YouTubePlug from './YouTubePlug';
 
 export default class Home extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.jsx</code> and save to reload.
-        </p>
+      <div>
+        <Slideshow />
+        <AboutSection />
+        <SickPano />
+        <YouTubePlug />
       </div>
     );
   }

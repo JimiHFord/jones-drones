@@ -4,7 +4,7 @@ import ReactGA from 'react-ga';
 import createHistory from "history/createBrowserHistory";
 import Shell from './Shell';
 import Home from './components/Home';
-import './App.css';
+// import './App.css';
 
 ReactGA.initialize('UA-99351059-1');
 
