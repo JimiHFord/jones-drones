@@ -1,19 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Router, Route, Redirect, Switch } from "react-router-dom";
+import ReactGA from 'react-ga';
+import createHistory from "history/createBrowserHistory";
+import Shell from './Shell';
+import Home from './components/Home';
 import './App.css';
+
+ReactGA.initialize('UA-99351059-1');
+
+const history = createHistory();
+const recordPageView = location => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+};
+const removePageChangeListener = history.listen(recordPageView);
+recordPageView(window.location);
 
 class App extends Component {
   render() {
+
+    const routeSwitcher = (
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    );
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.jsx</code> and save to reload.
-        </p>
-      </div>
+      <Router history={history}>
+        <Shell>
+          {routeSwitcher}
+        </Shell>
+      </Router>
     );
   }
 }
