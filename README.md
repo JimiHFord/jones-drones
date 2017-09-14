@@ -10,7 +10,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 [Install yarn](https://yarnpkg.com/lang/en/docs/install/)
 
-Run `yarn install` in root project directory. Then run `yarn start`.
+Run `yarn install` in root project directory. Then run `yarn start`. This will open your awesome website in a browser (better be Chrome, son). Changes made to the project will be *hot reloaded* into the browser without you having to do anything.
 
 
 ## Table of Contents
