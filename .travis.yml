@@ -1,15 +1,14 @@
 install:
-  - yarn install --production=false
-
+- yarn install --production=false
 script:
-  - yarn build
-
+- yarn build
 deploy:
   provider: s3
   access_key_id: AKIAIEAAWOKYBJ2NXANQ
   secret_access_key:
-    secure: "pjse6H1G28s3XxHtCHRNFZJV1Ouxpxa1pYr7l0PpTME79sqmE93x+sx2Pte8mDRFfNYAy/mzDhlsEKnmBWnmJXyTptOG4RDZVpJTOg5Vv5wDH2DDQHb82/c47WVLCQ5sUfUPTVrb8G9JET+ZdHV2u/jQNwGIYZ32LNXjXOEdw3ZhR5R0nA7C+ilvnRJo1eh34bOiCdYyvOdV3P219+aIOPcHaUne96GXUs06EYi7Z1vNMlAyknulJgCnmErbWMMiEHmOK1g4256hYUJlh/9T5dBw+cesD7GLdRKxRlm1rJKH6d14S8dx53amNll+OPTAqYlCBz0oQJ8Pqcbajl9sEHTBWbTYh1eep4YjDtclGiJrO+xaw3IgG8B41pCwNQx/5W+GF7zLWWwfqCK2xvXti0woWIkSn7wXjAYgUfG2n/N4ipLL90coIS0ycLE6KbBIY6REKB0ktV0t6m01bjgmmThNYM0JkXRfpXXbyOhD52m3xyDCkCiyE05/6NNML3mUfPxlRzG1eMZbWEgRTpPNzNIX8aTL0HiLgNo000jorTTZJi2mbqjWq3qNeWDpu66LeBdPjjUiWb2kGQJ9pCPCEwffzU7pCdel7TCS6lY+Xoq9ovGArvdnH4y0roCeGmFcH4nuc8wK6rf3uw4jGQ2VGDw8fqglOaNAJo1RUhmlt50="
+    secure: oAtV/XHX33FhBdSrum1ozeTWZRDeoBq38hK7qlRgFyHMxAr3GZ0N/xsdVfsCLig7GyyBspHwvb+9NufBPp6l0ie/VUKTjEs98K1jkHf22KMcAwcVfr2W0G/MTmE9rcRKA28cduqzHErwxX6ooivs2dwMGaGYCb/CeyoSurwHBd+BwJ7lw0ftXPRbIBTyBI+9lxduYnJRflNAtP7rDyezBes/8NT6bBnmBOZIIybqyGt4/oMHenlzGjb9kMMTi+b97GOBS6QxgmhHH48+09ZTIG73E2e6d8Rnh//8TDjL+yL+tPdeG02XGaFL9J7nSq9BovUif/4kNa3MLLkbvUcAnkosBI1LHNq3afRkTBZFa1Y2V9KLngd1ZF6omQWd0IUku5FR77Hb4PZdWjIYFoo1oTQ8cvWa22y2e58xK7M0xWYl3TrQ1Kf4bB62KyjIl8bGCJVU/ep4jc0npOT57fdCTnwWPcRnKAdMs4v1Y0Ln0DEQfF3u+hlt13EVH3Gbfa35eWlEetATEUh++n4WGBhQGXsk0yTv/rQvdfY1XqO+yZhRa9rdUCR4XT+blUyLBBUC2SLiQNpZa3q6KUXmjY+bbqbAJM99a4skj/ZmPdvXBbsB2ChqafLO274q8Dvboas3OA0qzkfTgYtBos3hpUHzB2+wcBwYGXyva4zwW+HEpnM=
   bucket: jimiford.com
-  skip_cleanup: true
-  local_dir: build
-  region: us-east-1
+  local-dir: build
+  acl: public_read
+  on:
+    repo: JimiHFord/jones-drones
