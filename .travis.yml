@@ -9,6 +9,7 @@ deploy:
     secure: oAtV/XHX33FhBdSrum1ozeTWZRDeoBq38hK7qlRgFyHMxAr3GZ0N/xsdVfsCLig7GyyBspHwvb+9NufBPp6l0ie/VUKTjEs98K1jkHf22KMcAwcVfr2W0G/MTmE9rcRKA28cduqzHErwxX6ooivs2dwMGaGYCb/CeyoSurwHBd+BwJ7lw0ftXPRbIBTyBI+9lxduYnJRflNAtP7rDyezBes/8NT6bBnmBOZIIybqyGt4/oMHenlzGjb9kMMTi+b97GOBS6QxgmhHH48+09ZTIG73E2e6d8Rnh//8TDjL+yL+tPdeG02XGaFL9J7nSq9BovUif/4kNa3MLLkbvUcAnkosBI1LHNq3afRkTBZFa1Y2V9KLngd1ZF6omQWd0IUku5FR77Hb4PZdWjIYFoo1oTQ8cvWa22y2e58xK7M0xWYl3TrQ1Kf4bB62KyjIl8bGCJVU/ep4jc0npOT57fdCTnwWPcRnKAdMs4v1Y0Ln0DEQfF3u+hlt13EVH3Gbfa35eWlEetATEUh++n4WGBhQGXsk0yTv/rQvdfY1XqO+yZhRa9rdUCR4XT+blUyLBBUC2SLiQNpZa3q6KUXmjY+bbqbAJM99a4skj/ZmPdvXBbsB2ChqafLO274q8Dvboas3OA0qzkfTgYtBos3hpUHzB2+wcBwYGXyva4zwW+HEpnM=
   bucket: jimiford.com
   local-dir: build
+  skip_cleanup: true
   acl: public_read
   on:
     repo: JimiHFord/jones-drones
