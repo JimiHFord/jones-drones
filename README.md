@@ -1,5 +1,5 @@
 # jones-drones
-[Wes's awesome website](http://jones-drones.com) (this SPA has not been deployed yet)
+[Wes's awesome website](https://jones-drones.com) (this repo currently deploys to [jimiford.com](https://jimiford.com))
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
