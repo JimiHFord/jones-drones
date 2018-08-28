@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "history": "^4.7.2",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-ga": "^2.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.13",
+    "react-scripts": "1.1.5",
     "react-slick": "^0.15.4"
   },
   "scripts": {
