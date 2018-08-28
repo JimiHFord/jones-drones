@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 
 export default class Shell extends Component {
-  static PropTypes = {
+  static propTypes = {
     children: PropTypes.object.isRequired
   };
   render() {

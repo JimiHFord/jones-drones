@@ -12,4 +12,5 @@ deploy:
   skip_cleanup: true
   acl: public_read
   on:
+    branch: master
     repo: JimiHFord/jones-drones
